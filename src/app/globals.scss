@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  color: #212121;
+}
+
+h1 {
+  font-size: 49px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 39px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 31px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+}
+
+.sub {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 70rem;
+  margin-inline: auto;
+  padding: 0 15px;
+}
