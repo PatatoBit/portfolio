@@ -19,3 +19,16 @@
     }
   }
 }
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+
+  max-width: 70rem;
+  margin-inline: auto;
+  padding: 1rem;
+
+  list-style: none;
+}
