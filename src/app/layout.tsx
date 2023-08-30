@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import "./globals.scss";
+import "../styles/variables.scss";
 import type { Metadata } from "next";
 import { IBM_Plex_Sans_Thai_Looped } from "next/font/google";
 import { Providers } from "./providers";

@@ -4,6 +4,8 @@ import { Listbox } from "@headlessui/react";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 
+import styles from "./components.module.scss";
+
 const themes = [
   {
     id: "system",
@@ -34,7 +36,7 @@ function ThemeSelector() {
         <div>Empty</div>
       )}
 
-      <Listbox.Options>
+      <Listbox.Options className={styles.themeList}>
         {themes.map((theme) => (
           <Listbox.Option key={theme.id} value={theme.id}>
             {theme.label}

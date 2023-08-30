@@ -1,0 +1,10 @@
+// styles/variables.scss
+:root {
+  --background: #faf5f0;
+  --foreground: #1f1f29;
+}
+
+[data-theme="dark"] {
+  --background: #1f1f29;
+  --foreground: #faf5f0;
+}

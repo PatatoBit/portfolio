@@ -1,3 +1,5 @@
+@import "../styles/variables";
+
 *,
 *::before,
 *::after {
@@ -8,7 +10,8 @@
 
 html,
 body {
-  color: #212121;
+  background-color: var(--background);
+  color: var(--foreground);
 }
 
 h1 {
@@ -32,7 +35,8 @@ p {
 
 .sub {
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--foreground);
+  opacity: 0.6;
 }
 
 .center {
