@@ -5,6 +5,9 @@ import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 
 import styles from "./components.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faSun } from "@fortawesome/free-regular-svg-icons";
 
 const themes = [
   {
@@ -31,7 +34,9 @@ function ThemeSelector() {
   return (
     <Listbox value={theme} onChange={(value) => setTheme(value)}>
       {mounted && resolvedTheme ? (
-        <Listbox.Button>{theme}</Listbox.Button>
+        <Listbox.Button>
+          <FontAwesomeIcon icon={faSun} />
+        </Listbox.Button>
       ) : (
         <div>Empty</div>
       )}
