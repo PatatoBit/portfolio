@@ -32,23 +32,25 @@ function ThemeSelector() {
   useEffect(() => setMounted(true), []);
 
   return (
-    <Listbox value={theme} onChange={(value) => setTheme(value)}>
-      {mounted && resolvedTheme ? (
-        <Listbox.Button>
-          <FontAwesomeIcon icon={faSun} />
-        </Listbox.Button>
-      ) : (
-        <div>Empty</div>
-      )}
+    <div className={styles.themeContainer}>
+      <Listbox value={theme} onChange={(value) => setTheme(value)}>
+        {mounted && resolvedTheme ? (
+          <Listbox.Button className={styles.themeButton}>
+            <FontAwesomeIcon icon={faSun} />
+          </Listbox.Button>
+        ) : (
+          <div>Empty</div>
+        )}
 
-      <Listbox.Options className={styles.themeList}>
-        {themes.map((theme) => (
-          <Listbox.Option key={theme.id} value={theme.id}>
-            {theme.label}
-          </Listbox.Option>
-        ))}
-      </Listbox.Options>
-    </Listbox>
+        <Listbox.Options className={styles.themeList}>
+          {themes.map((theme) => (
+            <Listbox.Option key={theme.id} value={theme.id}>
+              {theme.label}
+            </Listbox.Option>
+          ))}
+        </Listbox.Options>
+      </Listbox>
+    </div>
   );
 }
 
