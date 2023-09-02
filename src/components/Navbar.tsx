@@ -7,6 +7,12 @@ import Link from "next/link";
 function Navbar() {
   return (
     <nav className={`wrapper ${styles.navContainer}`}>
+      <div>
+        <Link href="/">
+          <h4>Patato</h4>
+        </Link>
+      </div>
+
       <ul className={styles.navList}>
         <Link href="/about">
           <li>About</li>
